@@ -49,7 +49,7 @@ export default function App() {
         throw new Error("Please take a photo before submitting");
       }
       const blob = await fetch(capturedPhoto).then((res) => res.blob());
-      const photoFileName = `dhira/photo_${Date.now()}.jpg`;
+      const photoFileName = `private/photo_${Date.now()}.jpg`;
 
       const photoStorageRef = ref(storage, photoFileName);
       const photoUploadTask = uploadBytes(photoStorageRef, blob);
@@ -62,8 +62,8 @@ export default function App() {
       if (address && loclatitude && loclongitude) {
         // 3. Kirim data menggunakan Axios
         const templateParams = {
-          name: "dhira",
-          email: "dhira",
+          name: "Someone",
+          email: "Someone",
           message: description,
           photo_url: photoDownloadURL,
           location: address,
