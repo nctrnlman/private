@@ -161,7 +161,7 @@ export default function App() {
     <div className="flex flex-col gap-4 bg-white min-h-screen w-full p-10">
       <div>
         <h1 className="text-3xl pb-5 text-center font-medium">
-          Hello Dhira, Capture Your Best Shot!
+          Hello :) , Capture Your Best Shot!
         </h1>
       </div>
 
